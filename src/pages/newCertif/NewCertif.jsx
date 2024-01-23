@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar"
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';
 import { useState } from "react";
 
-const NewCourse = () => {
+const NewCertif = () => {
   
   const [file,setFile] = useState("");
   
@@ -14,7 +14,7 @@ const NewCourse = () => {
         <div className="newContainer">
           <Navbar/>
           <div className="top1">
-            <h1 className="title">Add New Course</h1>
+            <h1 className="title">Add New Certification Session</h1>
           </div>
           <div className="bottom">
             <div className="left">
@@ -24,8 +24,8 @@ const NewCourse = () => {
             <div className="right">
               <form>
                 <div className="formInput">
-                <label>Title</label>
-                <input type="text" placeholder="Enter course title ..."/>
+                <label>Name</label>
+                <input type="text" placeholder="Enter certificate name ..."/>
                 </div>
                 <div className="formImgNew">
                 <label htmlFor="file">
@@ -34,28 +34,28 @@ const NewCourse = () => {
                 <input type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{display: "none"}}/>
                 </div>
                 <div className="formInput">
-                <label>Level</label>
-                <input type="text" placeholder="Enter course level ..."/>
+                <label>Date</label>
+                <input type="text" placeholder="Enter exam date ..."/>
                 </div>
                 <div className="formInput">
-                <label>Description</label>
-                <input type="text" placeholder="Enter course description ..."/>
-                </div>
-                <div className="formInput">
-                <label>Topics</label>
-                <input type="text" placeholder="Enter course topics ..."/>
+                <label>Place</label>
+                <input type="text" placeholder="Enter exam place ..."/>
                 </div>
                 <div className="formInput">
                 <label>Duration</label>
-                <input type="text" placeholder="Enter course duration ..."/>
-                </div>
-                <div className="formInput">
-                <label>Languages</label>
-                <input type="text" placeholder="Enter course languages ..."/>
+                <input type="text" placeholder="Enter exam duration ..."/>
                 </div>
                 <div className="formInput">
                 <label>Target</label>
                 <input type="text" placeholder="Enter targeted team ..."/>
+                </div>
+                <div className="formInput">
+                <label>Languages</label>
+                <input type="text" placeholder="Enter exam languages ..."/>
+                </div>
+                <div className="formInput">
+                <label>Description</label>
+                <input type="text" placeholder="Enter certificate description ..."/>
                 </div>
                 <button type="submit">Submit</button>
               </form>
@@ -66,4 +66,4 @@ const NewCourse = () => {
   )
 }
 
-export default NewCourse
+export default NewCertif
