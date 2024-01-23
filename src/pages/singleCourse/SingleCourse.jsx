@@ -1,6 +1,6 @@
 import "./single.scss"
 
-const Single = () => {
+const SingleCourse = () => {
   return (
     <div className="single">
       Hello
@@ -8,4 +8,4 @@ const Single = () => {
   )
 }
 
-export default Single
+export default SingleCourse

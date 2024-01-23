@@ -1,6 +1,6 @@
 import "./new.scss"
 
-const New = () => {
+const NewCertif = () => {
   return (
     <div className="new">
       Hello
@@ -8,4 +8,4 @@ const New = () => {
   )
 }
 
-export default New
+export default NewCertif

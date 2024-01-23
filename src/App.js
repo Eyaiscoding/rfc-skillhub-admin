@@ -1,6 +1,7 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import List from "./pages/list/List";
+import CourseList from "./pages/courseList/CourseList"
+import CertifList from "./pages/certifList/CertifList"
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,14 +13,13 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
           <Route path="courses">
-            <Route index element={<List/>}/>
+            <Route index element={<CourseList/>}/>
             <Route path=':courseId' element={<Single/>}/>
             <Route path='new' element={<New/>}/>
           </Route>
           <Route path="certifications">
-            <Route index element={<List/>}/>
+            <Route index element={<CertifList/>}/>
             <Route path=':certifId' element={<Single/>}/>
             <Route path='new' element={<New/>}/>
           </Route>
